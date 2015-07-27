@@ -61,7 +61,6 @@ function getWinner(playerMove,computerMove) {
     } 
 
     return winner;
-
 }
 
 function playToFive() {
@@ -80,32 +79,26 @@ function playToFive() {
             console.log('Player wins with ' + playerMove);
             console.log('Computer loses with ' + computerMove);
         }
-        
         else if (winner === 'computer') {
             computerWins++;
             console.log('Computer wins with ' + computerMove);
             console.log('Player loses with ' + playerMove);
         }  
-
         else if (winner === 'tie') {
             console.log('This round is a tie');
         }
     
-    console.log ("Player Score: " + playerWins);
-    console.log ("Computer Score: " + computerWins);
-    
+        console.log ("Player Score: " + playerWins);
+        console.log ("Computer Score: " + computerWins);  
     }
 
     if (playerWins === 5) {
         console.log ('Well done, you have won five rounds!');
     }
-
     else if (computerWins === 5) {
         console.log ('The computer has won five rounds!');
     }
-
 }
 
 playToFive();  
    
-
